@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/image_view_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/weather_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/few_clouds" />
+
+    <TextView
+        android:id="@+id/tv_min_max_temp_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alice"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_item"
+        app:layout_constraintStart_toStartOf="@+id/image_view_item"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_item"
+        tools:text="4&#xb0;c\n5&#xb0;c" />
+
+    <TextView
+        android:id="@+id/tv_date_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alice"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_item"
+        app:layout_constraintStart_toStartOf="@+id/image_view_item"
+        app:layout_constraintTop_toBottomOf="@+id/tv_min_max_temp_item"
+        tools:text="1:00 AM" />
+</androidx.constraintlayout.widget.ConstraintLayout>
